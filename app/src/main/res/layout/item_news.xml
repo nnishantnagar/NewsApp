@@ -4,8 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginVertical="8dp"
-    app:cardCornerRadius="16dp">
+    android:layout_margin="10dp"
+    android:layout_marginVertical="5dp"
+    android:background="#737272"
+    android:padding="10dp"
+    app:cardCornerRadius="15dp">
 
 
     <LinearLayout
@@ -18,16 +21,18 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:contentDescription="TODO"
             android:scaleType="centerCrop"
-            android:layout_margin="6dp"
-            tools:srcCompat="@tools:sample/avatars"
-            android:contentDescription="TODO" />
+            tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="6dp"
+            android:layout_margin="5dp"
+            android:maxLines="1"
+            android:padding="5dp"
             android:textColor="#0B0A0A"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -36,7 +41,10 @@
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="6dp"
+            android:layout_margin="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="5dp"
             android:textColor="#0B0A0A"
             android:textSize="18sp" />
 

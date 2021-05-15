@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+
+
 }
 
 android {
@@ -66,5 +68,4 @@ dependencies {
     implementation "androidx.vectordrawable:vectordrawable-seekable:1.0.0-alpha02"
     implementation 'com.android.volley:volley:1.2.0'
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
-
 }

@@ -15,7 +15,7 @@ class NewsListAdapter( private val listener: NewsItemClicked): RecyclerView.Adap
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_news,parent,false)
         val viewHolder = NewsViewHolder(view)
         view.setOnClickListener{
-            listener.onItemClicked(items[viewHolder.adapterPosition])
+            listener.onItemClicked(items[viewHolder.absoluteAdapterPosition])
         }
         return viewHolder
     }
@@ -35,7 +35,7 @@ class NewsListAdapter( private val listener: NewsItemClicked): RecyclerView.Adap
         items.addAll(updatedNews)
         notifyDataSetChanged()
     }
-    }
+}
 class NewsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
     val title: TextView = itemView.findViewById(R.id.textView)
     val image: ImageView = itemView.findViewById(R.id.imageView)
